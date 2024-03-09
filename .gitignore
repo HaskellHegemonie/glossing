@@ -1,0 +1,5 @@
+/dist-newstyle
+/app/Book.lhs
+/app/Tick.hs
+*.config*
+/cabal.project.local

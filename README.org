@@ -1,0 +1,16 @@
+* Glossing
+** Setup (cabal2nix)
+#+begin_src shell
+  nix-shell cabal-shell.nix
+  cabal configure
+  cabal run
+#+end_src
+** Setup (nix-shell)
+#+begin_src shell
+  nix-shell
+  cabal run
+#+end_src
+
+** Improvements
+*** [[file:app/Main.hs][Main.hs]]
+Maybe use some lenses
