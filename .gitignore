@@ -1,5 +1,6 @@
 /dist-newstyle
-/app/Book.lhs
-/app/Tick.hs
+/gloss/Book.lhs
+/gloss/Tick.hs
+/not-gloss/Tut.lhs
 *.config*
 /cabal.project.local

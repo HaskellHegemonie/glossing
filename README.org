@@ -1,16 +1,21 @@
 * Glossing
+** Executables
+*** gloss
+2d simulations
+*** not-gloss
+3d animations
+*** For next sections
+Treat $EXE as either gloss or not-gloss
 ** Setup (cabal2nix)
 #+begin_src shell
   nix-shell cabal-shell.nix
-  cabal configure
-  cabal run
+  cabal configure 
+  cabal run $EXE
 #+end_src
 ** Setup (nix-shell)
 #+begin_src shell
   nix-shell
-  cabal run
+  cabal run $EXE
 #+end_src
-
 ** Improvements
-*** [[file:app/Main.hs][Main.hs]]
 Maybe use some lenses

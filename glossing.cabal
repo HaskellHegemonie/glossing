@@ -3,10 +3,17 @@ version: 0.1.0.0
 name: glossing
 common commons
         default-language: Haskell2010
-        build-depends: base, gloss, gloss-rendering
-                            
-executable glossing
+        build-depends: base, gloss, not-gloss, linear, spatial-math
+
+executable gloss
         import: commons
         main-is: Main.hs
         other-modules: Vig
-        hs-source-dirs: app
+        hs-source-dirs: gloss
+
+      
+
+executable not-gloss
+        import: commons
+        main-is: Main.hs
+        hs-source-dirs: not-gloss

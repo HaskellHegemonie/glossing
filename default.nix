@@ -7,7 +7,7 @@ let
   build =  stdenv.mkDerivation {
     name = "testing";
     dontUnpack = true;
-    buildInputs = with pkgs; [ (ghc.withPackages (hs-pkgs: with hs-pkgs; [ gloss ])) ];
+    buildInputs = with pkgs; [ (ghc.withPackages (hs-pkgs: with hs-pkgs; [ gloss not-gloss ])) ];
     passthru = { inherit pkgs; inherit shell;};
   };
   shell = pkgs.mkShell {
